@@ -63,7 +63,7 @@ export default function Hero() {
                     Or create an account with your email
                   </p>
                   <div className="md:flex md:justify-center md:items-center md:gap-3 mt-3 xl:justify-start">
-                    <div className="email flex gap-3 bg-[#1A1A1A] border border-gray-600 rounded-lg w-full md:w-9/12 lg:w-6/12 py-2 px-3 transition-all duration-300 focus-within:border-white xl:w-[400px]">
+                    <div className="email md:mt-3  flex gap-3 bg-[#1A1A1A] border border-gray-600 rounded-lg w-full md:w-9/12 lg:w-6/12 py-2 px-3 transition-all duration-300 focus-within:border-white xl:w-[400px]">
                       <span className="text-white flex-shrink-0 flex items-center">
                         <IoMdMail size={20} />
                       </span>
@@ -74,8 +74,8 @@ export default function Hero() {
                       />
                     </div>
 
-                    <div className="sign-up mt-3 md:mt-0 md:w-40 md:flex md:items-stretch xl:ml-0">
-                      <button className="w-full px-2 py-2 bg-[#58C3DB] text-black rounded-lg font-bold hover:bg-[#42aac3] transition-colors duration-300">
+                    <div className="sign-up md:mt-0 mt-3   md:w-40 md:flex  ">
+                      <button className="w-full  px-2   py-3 bg-[#58C3DB] text-black rounded-lg font-bold hover:bg-[#42aac3] transition-colors duration-300">
                         Sign Up
                       </button>
                     </div>
