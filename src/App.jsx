@@ -1,11 +1,26 @@
 import React from "react";
-import { Navbar, Hero } from "./Components/index";
+import {
+  Navbar,
+  Hero,
+  ReactCompanies,
+  SteptoCertication,
+} from "./Components/index";
 
 export default function App() {
   return (
     <>
-     
-      <Hero />
+      <div className="bg-[#1A1A1A]">
+        <Navbar />
+      </div>
+      <div className="bg-[#1A1A1A]">
+        <Hero />
+      </div>
+      <div className="bg-[#1A1A1A]">
+        <ReactCompanies />
+      </div>
+      <div className="bg-[#1A1A1A]">
+        <SteptoCertication />
+      </div>
     </>
   );
 }

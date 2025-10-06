@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <>
       <div className="Main ">
-        <nav className="container mx-auto flex items-center justify-between h-[80px] px-4">
+        <nav className="container  backdrop-blur-xl fixed mx-auto flex items-center justify-between h-[80px] px-4">
           {/* Logo */}
           <div className="logo">
             <img className="w-[48px]" src={logo} alt="logo" />
@@ -34,7 +34,7 @@ export default function Navbar() {
                 Buy Now
               </button>
             </div>
-            <div className="main-for-light-and-black-icon flex gap-2 bg-[#252529] py-2 px-3 rounded-full">
+            <div className="main-for-light-and-black-icon flex gap-2 bg-[#252529] py-2 px-2 rounded-full">
               <div className="dark text-white">
                 <IoIosMoon size={20} />
               </div>
@@ -63,7 +63,7 @@ export default function Navbar() {
         </nav>
 
         <div
-          className={`xl:hidden bg-[#1A1A1A] overflow-hidden transition-all duration-500 ease-in-out ${
+          className={`xl:hidden bg-[#1A1A1A] fixed top-24 w-80 overflow-hidden transition-all duration-500 ease-in-out ${
             toggle ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
           }`}
         >
@@ -84,7 +84,7 @@ export default function Navbar() {
             </button>
 
             {/* Light / Dark Mode Icons */}
-            <div className="main-for-light-and-black-icon flex gap-3 bg-[#252529] py-2 px-3 rounded-full w-[80px]">
+            <div className="main-for-light-and-black-icon flex gap-3 bg-[#252529] py-2 px-2 rounded-full w-[70px]">
               <div className="dark text-white">
                 <IoIosMoon size={20} />
               </div>
