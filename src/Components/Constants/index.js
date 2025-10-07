@@ -2,6 +2,8 @@ import { BsBoxArrowUpRight } from "react-icons/bs";
 import { TiDocumentText } from "react-icons/ti";
 import { FaCode } from "react-icons/fa";
 import { MdEditDocument } from "react-icons/md";
+import { IoBagSharp } from "react-icons/io5";
+import { FaStar } from "react-icons/fa6";
 
 import {
   instagram,
@@ -85,5 +87,30 @@ export const stepstoCertification = [
     detail:
       "Take the certification online proctored exam, which will consist of both multiple-choice questions and practical coding exercises",
     img: [takeExam1, takeExam2],
+  },
+];
+
+export const clearInterestData = [
+  {
+    icon: TiDocumentText,
+    persentage: "90%",
+    detail: "of developers would read the docs before taking the exam",
+  },
+  {
+    icon: MdEditDocument,
+    persentage: "88%",
+    detail: "aim to achieve advanced or both certification levels",
+  },
+  {
+    icon: IoBagSharp,
+    persentage: "82%",
+    detail:
+      "look to Certification to validate their skills and knowledge in React",
+  },
+  {
+    icon: FaStar,
+    persentage: "96%",
+    detail:
+      "believe that having a React certification will enhance their professional credibility",
   },
 ];

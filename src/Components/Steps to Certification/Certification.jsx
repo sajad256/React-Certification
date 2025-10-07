@@ -63,7 +63,7 @@ export default function Certification() {
             );
           })}
         </div>
-        s
+        
       </section>
     </>
   );
