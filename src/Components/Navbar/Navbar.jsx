@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <>
       <div className="Main ">
-        <nav className="container  backdrop-blur-xl fixed mx-auto flex items-center justify-between h-[80px] px-4">
+        <nav className="container  backdrop-blur-xl z-50 fixed mx-auto flex items-center justify-between h-[80px] px-4">
           {/* Logo */}
           <div className="logo">
             <img className="w-[48px]" src={logo} alt="logo" />
