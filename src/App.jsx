@@ -6,6 +6,7 @@ import {
   SteptoCertication,
   Clearinterst,
   Reactlevel,
+  OptionalPreparation,
 } from "./Components/index";
 
 export default function App() {
@@ -28,6 +29,9 @@ export default function App() {
       </div>
       <div className="bg-[#1A1A1A]">
         <Reactlevel />
+      </div>
+      <div className="bg-[#1A1A1A]">
+        <OptionalPreparation />
       </div>
     </>
   );

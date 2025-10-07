@@ -4,6 +4,8 @@ import { FaCode } from "react-icons/fa";
 import { MdEditDocument } from "react-icons/md";
 import { IoBagSharp } from "react-icons/io5";
 import { FaStar } from "react-icons/fa6";
+import { FaCheckCircle } from "react-icons/fa";
+import { BsBootstrapFill } from "react-icons/bs";
 
 import {
   logo,
@@ -142,5 +144,31 @@ export const ReactCLevel = [
     questions: "50 Questions and 105 minutes of Coding Challenges",
     detail:
       "Demonstrate your expertise in React architecture and large-scale application development. This certification verifies your ability to lead React projects, solve advanced challenges, and architect enterprise-level applications. Position yourself as a top-tier React professional capable of driving complex, high-stakes projects.",
+  },
+];
+
+export const optionalPreparation = [
+  {
+    icon: FaCode,
+    title: "Self-Study Training",
+    detail:
+      "Prepare at your own pace with our comprehensive self-study materials. Get on-demand access to interactive lessons, coding exercises, and quizzes tailored for:",
+    check: FaCheckCircle,
+    list: [
+      "Junior React Developer Certification",
+      "Mid-Level React Developer Certification",
+      "Senior React Developer Certification",
+    ],
+  },
+  {
+    icon: BsBootstrapFill,
+    title: "Live Bootcamps",
+    detail:
+      "Prefer an immersive, instructor-led experience? Level up with our intensive live bootcamps conducted by React experts. Choose from:",
+    check: FaCheckCircle,
+    list: [
+      "3-Day Mid-Level React Developer Bootcamp",
+      "3-Day Sen-Level React Developer Bootcamp",
+    ],
   },
 ];
