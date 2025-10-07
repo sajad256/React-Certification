@@ -1,4 +1,6 @@
 import logo from "./logo.svg";
+import logo2 from "./logo2.svg"
+import logo3 from "./logo3.svg"
 import heroImg from "./hero-img.svg";
 import heroSimg from "./hero-S-img.svg";
 import instagram from "./instagram.png";
@@ -16,6 +18,8 @@ import takeExam2 from "./takeExam-2.svg"
 
 export {
   logo,
+  logo2,
+  logo3,
   heroImg,
   heroSimg,
   instagram,

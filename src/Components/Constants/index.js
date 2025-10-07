@@ -6,6 +6,9 @@ import { IoBagSharp } from "react-icons/io5";
 import { FaStar } from "react-icons/fa6";
 
 import {
+  logo,
+  logo2,
+  logo3,
   instagram,
   netflix,
   whatsapp,
@@ -112,5 +115,32 @@ export const clearInterestData = [
     persentage: "96%",
     detail:
       "believe that having a React certification will enhance their professional credibility",
+  },
+];
+
+export const ReactCLevel = [
+  {
+    img: logo,
+    title: "Junior React Developer",
+    duration: "40 min",
+    questions: "50 Questions",
+    detail:
+      "Validate your React fundamentals with this certification. Demonstrate your ability to work with core concepts and basic implementations, enhancing your credibility with employers and clients. This certification confirms your readiness for junior React developer roles and provides a solid foundation for your career growth.",
+  },
+  {
+    img: logo2,
+    title: "Mid-Level React Developer",
+    duration: "135 min",
+    questions: "40 Questions and 105 minutes of Coding Challenges",
+    detail:
+      "Prove your proficiency in intermediate React concepts and real-world applications. This certification showcases your ability to tackle complex projects, making you stand out in the job market. Ideal for developers looking to take on more challenging React roles and projects.",
+  },
+  {
+    img: logo3,
+    title: "Senior React Developer",
+    duration: "140 min",
+    questions: "50 Questions and 105 minutes of Coding Challenges",
+    detail:
+      "Demonstrate your expertise in React architecture and large-scale application development. This certification verifies your ability to lead React projects, solve advanced challenges, and architect enterprise-level applications. Position yourself as a top-tier React professional capable of driving complex, high-stakes projects.",
   },
 ];
