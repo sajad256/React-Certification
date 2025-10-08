@@ -7,6 +7,8 @@ import {
   Clearinterst,
   Reactlevel,
   OptionalPreparation,
+  Pricing,
+  ChooseyourLevel,
 } from "./Components/index";
 
 export default function App() {
@@ -32,6 +34,12 @@ export default function App() {
       </div>
       <div className="bg-[#1A1A1A]">
         <OptionalPreparation />
+      </div>
+      <div className="bg-[#1A1A1A]">
+        <Pricing />
+      </div>
+      <div className="bg-[#1A1A1A]">
+        <ChooseyourLevel />
       </div>
     </>
   );

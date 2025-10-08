@@ -6,6 +6,10 @@ import { IoBagSharp } from "react-icons/io5";
 import { FaStar } from "react-icons/fa6";
 import { FaCheckCircle } from "react-icons/fa";
 import { BsBootstrapFill } from "react-icons/bs";
+import { FaPen } from "react-icons/fa";
+import { FiPlusCircle } from "react-icons/fi";
+import { HiDocumentChartBar } from "react-icons/hi2";
+import { FaHeart } from "react-icons/fa6";
 
 import {
   logo,
@@ -170,5 +174,43 @@ export const optionalPreparation = [
       "3-Day Mid-Level React Developer Bootcamp",
       "3-Day Sen-Level React Developer Bootcamp",
     ],
+  },
+];
+
+export const pricing = [
+  {
+    icon: FaPen,
+    title: "Early access to the self-study training",
+    detail:
+      "Get a head start on your exam preparation with early access to the study material should you purchase this option",
+    plusIcon: FiPlusCircle,
+  },
+  {
+    icon: FaCode,
+    title: "Priority delivery for your certification voucher",
+    detail:
+      "Get a head start on your exam preparation with early access to the study material should you purchase this option",
+    plusIcon: FiPlusCircle,
+  },
+  {
+    icon: TiDocumentText,
+    title: "Early access to the full preparation guide",
+    detail:
+      "Get a head start on your exam preparation with early access to the study material should you purchase this option",
+    plusIcon: FiPlusCircle,
+  },
+  {
+    icon: HiDocumentChartBar,
+    title: "Launch Price Discounts",
+    detail:
+      "Get a head start on your exam preparation with early access to the study material should you purchase this option",
+    plusIcon: FiPlusCircle,
+  },
+  {
+    icon: FaHeart,
+    title: "Be First to be Certified",
+    detail:
+      "Get a head start on your exam preparation with early access to the study material should you purchase this option",
+    plusIcon: FiPlusCircle,
   },
 ];
