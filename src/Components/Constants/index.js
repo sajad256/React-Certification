@@ -11,7 +11,6 @@ import { FiPlusCircle } from "react-icons/fi";
 import { HiDocumentChartBar } from "react-icons/hi2";
 import { FaHeart } from "react-icons/fa6";
 import { HiMiniTrophy } from "react-icons/hi2";
-import { BsPersonBoundingBox } from "react-icons/bs";
 
 import {
   logo,
@@ -225,6 +224,5 @@ export const chooseyourLevel = [
   {
     Jlevel: ["Junior"],
     Jicon: [MdEditDocument, HiMiniTrophy],
-    
   },
 ];
