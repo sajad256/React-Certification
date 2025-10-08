@@ -57,60 +57,63 @@ export default function ReactCompanies() {
           {benefitsofReact.map((data, index) => {
             return (
               <>
-                <div
-                  className={`reactCompetency  xl:flex xl:items-center xl:justify-between  ${
-                    index === 1
-                      ? "xl:flex xl:flex-row-reverse gap-10"
-                      : index === 0
-                      ? "mt-10"
-                      : ""
-                  }`}
-                >
+                <div className="for-2xl 2xl:grid 2xl:justify-items-center">
                   <div
-                    className={`info 
+                    className={`reactCompetency  xl:flex xl:items-center xl:justify-between   max-w-screen-2xl   ${
+                      index === 1
+                        ? "xl:flex xl:flex-row-reverse gap-10"
+                        : index === 0
+                        ? "mt-10"
+                        : ""
+                    }`}
+                  >
+                    <div
+                      className={`info 
                        xl:w-6/12  xl:h-auto xl:space-y-0 text-center xl:text-left
                        ${index === 2 ? "xl:w-9/12" : ""}
                        `}
-                  >
-                    <div className="container xl:text-left">
-                      <h1 className="text-white text-xl font-bold md:text-4xl lg:text-5xl xl:text-3xl">
-                        {data.headTitle
-                          .split(
-                            new RegExp(
-                              "(" +
-                                (index === 0
-                                  ? "React competency"
-                                  : index === 1
-                                  ? "Enhanced"
-                                  : "benefit your team") +
-                                ")",
-                              "g"
+                    >
+                      <div className="container xl:text-left">
+                        <h1 className="text-white text-xl font-bold md:text-4xl lg:text-5xl xl:text-3xl">
+                          {data.headTitle
+                            .split(
+                              new RegExp(
+                                "(" +
+                                  (index === 0
+                                    ? "React competency"
+                                    : index === 1
+                                    ? "Enhanced"
+                                    : "benefit your team") +
+                                  ")",
+                                "g"
+                              )
                             )
-                          )
-                          .map((part, i) => (
-                            <span
-                              key={i}
-                              className={
-                                (index === 0 && part === "React competency") ||
-                                (index === 1 && part === "Enhanced") ||
-                                (index === 2 && part === "benefit your team")
-                                  ? "text-[#58C4DC]"
-                                  : ""
-                              }
-                            >
-                              {part}
-                            </span>
-                          ))}
-                      </h1>
+                            .map((part, i) => (
+                              <span
+                                key={i}
+                                className={
+                                  (index === 0 &&
+                                    part === "React competency") ||
+                                  (index === 1 && part === "Enhanced") ||
+                                  (index === 2 && part === "benefit your team")
+                                    ? "text-[#58C4DC]"
+                                    : ""
+                                }
+                              >
+                                {part}
+                              </span>
+                            ))}
+                        </h1>
 
-                      <p className="text-[#878E8E] lg:text-lg mt-3">
-                        {data.detail}
-                      </p>
+                        <p className="text-[#878E8E] lg:text-lg mt-3">
+                          {data.detail}
+                        </p>
+                      </div>
                     </div>
-                  </div>
 
-                  <div className="img flex justify-center xl:items-center xl:mt-0">
-                    <img className="" src={data.img} alt="" />
+                    <div className="img flex justify-center xl:items-center xl:mt-0">
+                      <img className="" src={data.img} alt="" />
+                    </div>
                   </div>
                 </div>
               </>

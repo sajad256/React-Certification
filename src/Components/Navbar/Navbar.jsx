@@ -10,58 +10,68 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="Main ">
-        <nav className="container  backdrop-blur-xl z-50 fixed mx-auto flex items-center justify-between h-[80px] px-4">
-          {/* Logo */}
-          <div className="logo">
-            <img className="w-[48px]" src={logo} alt="logo" />
-          </div>
-
-          <div className="lists hidden xl:flex xl:items-center gap-8">
-            {navLink.map((data, index) => (
-              <ul
-                key={index}
-                className="text-white font-bold flex items-center gap-1 relative group"
-              >
-                <li className="cursor-pointer text-sm hover:text-[#58C4DC] relative after:content-[''] after:absolute after:left-1/2 after:-bottom-[5px] after:h-[2px] after:w-0 after:bg-[#42aac3] after:transition-all after:duration-300 after:ease-out group-hover:after:left-0 group-hover:after:w-full">
-                  {data.title}
-                </li>
-                {data.icon && <data.icon className="text-white text-sm" />}
-              </ul>
-            ))}
-            <div className="buy-now">
-              <button className="bg-[#58C4DC] px-4 py-2 rounded-lg font-bold hover:bg-[#42aac3] transition-all">
-                Buy Now
-              </button>
+      <div className="Main">
+        {/* Navbar */}
+        <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-xl h-[80px]">
+          {/* Inner wrapper for centering content */}
+          <div className="mx-auto max-w-screen-2xl px-4 flex items-center justify-between h-full">
+            {/* Logo */}
+            <div className="logo">
+              <img className="w-[48px]" src={logo} alt="logo" />
             </div>
-            <div className="main-for-light-and-black-icon flex gap-2 bg-[#252529] py-2 px-2 rounded-full">
-              <div className="dark text-white">
-                <IoIosMoon size={20} />
+
+            {/* Desktop Links */}
+            <div className="lists hidden xl:flex xl:items-center gap-8">
+              {navLink.map((data, index) => (
+                <ul
+                  key={index}
+                  className="text-white font-bold flex items-center gap-1 relative group"
+                >
+                  <li className="cursor-pointer text-sm hover:text-[#58C4DC] relative after:content-[''] after:absolute after:left-1/2 after:-bottom-[5px] after:h-[2px] after:w-0 after:bg-[#42aac3] after:transition-all after:duration-300 after:ease-out group-hover:after:left-0 group-hover:after:w-full">
+                    {data.title}
+                  </li>
+                  {data.icon && <data.icon className="text-white text-sm" />}
+                </ul>
+              ))}
+
+              {/* Buy Now Button */}
+              <div className="buy-now">
+                <button className="bg-[#58C4DC] px-4 py-2 rounded-lg font-bold hover:bg-[#42aac3] transition-all">
+                  Buy Now
+                </button>
               </div>
-              <div className="light text-white">
-                <IoMdSunny size={20} />
+
+              {/* Light/Dark Mode */}
+              <div className="main-for-light-and-black-icon flex gap-2 bg-[#252529] py-2 px-2 rounded-full">
+                <div className="dark text-white">
+                  <IoIosMoon size={20} />
+                </div>
+                <div className="light text-white">
+                  <IoMdSunny size={20} />
+                </div>
               </div>
             </div>
-          </div>
 
-          {/* Mobile Menu Icon */}
-          <div className="Menu xl:hidden cursor-pointer">
-            {toggle ? (
-              <FiX
-                className="text-[#888F9B] transition-all duration-300"
-                size={35}
-                onClick={() => setToggle(false)}
-              />
-            ) : (
-              <FiMenu
-                className="text-[#888F9B] transition-all duration-300"
-                size={35}
-                onClick={() => setToggle(true)}
-              />
-            )}
+            {/* Mobile Menu Icon */}
+            <div className="Menu xl:hidden cursor-pointer">
+              {toggle ? (
+                <FiX
+                  className="text-[#888F9B] transition-all duration-300"
+                  size={35}
+                  onClick={() => setToggle(false)}
+                />
+              ) : (
+                <FiMenu
+                  className="text-[#888F9B] transition-all duration-300"
+                  size={35}
+                  onClick={() => setToggle(true)}
+                />
+              )}
+            </div>
           </div>
         </nav>
 
+        {/* Mobile Menu */}
         <div
           className={`xl:hidden bg-[#1A1A1A] fixed top-24 w-80 overflow-hidden transition-all duration-500 ease-in-out ${
             toggle ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
@@ -83,7 +93,7 @@ export default function Navbar() {
               Buy Now
             </button>
 
-            {/* Light / Dark Mode Icons */}
+            {/* Light/Dark Mode Icons */}
             <div className="main-for-light-and-black-icon flex gap-3 bg-[#252529] py-2 px-2 rounded-full w-[70px]">
               <div className="dark text-white">
                 <IoIosMoon size={20} />

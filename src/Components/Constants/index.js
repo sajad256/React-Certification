@@ -10,6 +10,8 @@ import { FaPen } from "react-icons/fa";
 import { FiPlusCircle } from "react-icons/fi";
 import { HiDocumentChartBar } from "react-icons/hi2";
 import { FaHeart } from "react-icons/fa6";
+import { HiMiniTrophy } from "react-icons/hi2";
+import { BsPersonBoundingBox } from "react-icons/bs";
 
 import {
   logo,
@@ -212,5 +214,17 @@ export const pricing = [
     detail:
       "Get a head start on your exam preparation with early access to the study material should you purchase this option",
     plusIcon: FiPlusCircle,
+  },
+];
+
+export const chooseyourLevel = [
+  {
+    rank: ["Junior", "Mid-Level", "Senior"],
+  },
+  // Junior
+  {
+    Jlevel: ["Junior"],
+    Jicon: [MdEditDocument, HiMiniTrophy],
+    
   },
 ];
