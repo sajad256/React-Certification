@@ -73,7 +73,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         <div
-          className={`xl:hidden bg-[#1A1A1A] fixed top-24 w-80 overflow-hidden transition-all duration-500 ease-in-out ${
+          className={`xl:hidden bg-[#1A1A1A] fixed z-50 top-24 w-80 overflow-hidden transition-all duration-500 ease-in-out ${
             toggle ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
           }`}
         >
