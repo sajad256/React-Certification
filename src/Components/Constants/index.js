@@ -224,5 +224,45 @@ export const chooseyourLevel = [
   {
     Jlevel: ["Junior"],
     Jicon: [MdEditDocument, HiMiniTrophy],
+    title: "Exam Only",
+    detail: "Interested in bulk vouchers?Contact us below",
+    price: "$345",
+    checkICon: FaCheckCircle,
+    list: [
+      "Preparation Guide Access",
+      "Discord Community Access",
+      "Junior Exam Voucher",
+    ],
+  },
+  // Junior
+  {
+    Jlevel: ["Junior"],
+    Jicon: HiMiniTrophy,
+    title: "Exam Only",
+    detail: "Interested in bulk vouchers?Contact us below",
+    price: "$99",
+    checkICon: FaCheckCircle,
+    list: [
+      "Preparation Guide Access",
+      "Discord Community Access",
+      "Junior Exam Voucher",
+      "Self-Study Training Access",
+      "Free Tatake",
+      "Trial Exam",
+    ],
+  },
+  // Mid-Level
+  {
+    Mlevel: "Mid-Level",
+    Jicon: MdEditDocument,
+    Mtitle: "Exam Only",
+    Mdetail: "Interested in bulk vouchers?Contact us below",
+    Mprice: "$800",
+    checkICon: FaCheckCircle,
+    list: [
+      "Preparation Guide Access",
+      "Discord Community Access",
+      "Mid-Level Exam Voucher",
+    ],
   },
 ];

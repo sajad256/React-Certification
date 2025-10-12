@@ -18,7 +18,7 @@ export default function Pricing() {
       </div>
 
       {/* Pricing Boxes */}
-      <div className="Main-for-Boxes">
+      <div className="Main-for-Boxes overflow-hidden">
         <div className="second container pt-10 md:grid md:justify-items-center xl:grid-cols-5">
           {pricing.map((data, index) => {
             const Icon = data.icon;
