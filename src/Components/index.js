@@ -7,6 +7,12 @@ import Reactlevel from "./React Certification Levels/Reactlevel";
 import OptionalPreparation from "./Optional Preparation Training Products/OptionalPreparation";
 import Pricing from "./Pricing/Pricing";
 import ChooseyourLevel from "./Choose Your Level/YourLevel";
+import Examination from "./Examination Board/Examination";
+import CertificatesDiv from "./Read the latest from Certificates dev/CertificatesDiv";
+import Testimonials from "./Testimonials/Testimonials";
+import FAQs from "./FAQs/FAQs";
+import Certificates from "./CertificatesDiv/Certificates";
+import Footer from "./Footer/Footer";
 
 export {
   Navbar,
@@ -18,4 +24,10 @@ export {
   OptionalPreparation,
   Pricing,
   ChooseyourLevel,
+  Examination,
+  CertificatesDiv,
+  Testimonials,
+  FAQs,
+  Certificates,
+  Footer,
 };

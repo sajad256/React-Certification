@@ -9,6 +9,12 @@ import {
   OptionalPreparation,
   Pricing,
   ChooseyourLevel,
+  Examination,
+  CertificatesDiv,
+  Testimonials,
+  FAQs,
+  Certificates,
+  Footer,
 } from "./Components/index";
 
 export default function App() {
@@ -40,6 +46,24 @@ export default function App() {
       </div>
       <div className="bg-[#1A1A1A]">
         <ChooseyourLevel />
+      </div>
+      <div className="bg-[#1A1A1A]">
+        <Examination />
+      </div>
+      <div className="bg-[#1A1A1A]">
+        <CertificatesDiv />
+      </div>
+      <div className="bg-[#1A1A1A]">
+        <Testimonials />
+      </div>
+      <div className="bg-[#1A1A1A]">
+        <FAQs />
+      </div>
+      <div className="bg-[#252529]">
+        <Certificates />
+      </div>
+      <div className="bg-black">
+        <Footer />
       </div>
     </>
   );

@@ -10,7 +10,14 @@ import { FaPen } from "react-icons/fa";
 import { FiPlusCircle } from "react-icons/fi";
 import { HiDocumentChartBar } from "react-icons/hi2";
 import { FaHeart } from "react-icons/fa6";
-import { HiMiniTrophy } from "react-icons/hi2";
+import { FaGithub } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { VscQuote } from "react-icons/vsc";
+import { FaInfoCircle } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { PiButterflyFill } from "react-icons/pi";
 
 import {
   logo,
@@ -28,6 +35,18 @@ import {
   aurora,
   takeExam1,
   takeExam2,
+  visa,
+  mastercard,
+  stripe,
+  applepay,
+  googlepay,
+  paypal,
+  alain,
+  alex,
+  devlin,
+  react1,
+  certificates,
+  certification23,
 } from "../../assets/Imges";
 
 export const navLink = [
@@ -216,53 +235,255 @@ export const pricing = [
   },
 ];
 
-export const chooseyourLevel = [
+export const chooseyourLevel = {
+  Junior: [
+    {
+      title: "Exam Only",
+      price: "$69",
+      features: [
+        "Preparation Guide Access",
+        "Discord Community Access",
+        "Junior Exam Voucher",
+      ],
+      best: false,
+    },
+    {
+      title: "Exam & Preparation Bundle",
+      price: "$99",
+      features: [
+        "Preparation Guide Access",
+        "Discord Community Access",
+        "Junior Exam Voucher",
+        "Self-Study Training Access",
+        "Free Retake",
+        "Trial Exam",
+      ],
+      best: true,
+    },
+  ],
+  "Mid-Level": [
+    {
+      title: "Exam Only",
+      price: "$99",
+      features: [
+        "Preparation Guide Access",
+        "Discord Community Access",
+        "Exam Voucher",
+      ],
+      best: false,
+    },
+    {
+      title: "Exam + Training Bundle",
+      price: "$129",
+      features: [
+        "Preparation Guide Access",
+        "Discord Community Access",
+        "Exam Voucher",
+        "Online Training Access",
+      ],
+      best: false,
+    },
+    {
+      title: "Ultimate Bundle",
+      price: "$159",
+      features: [
+        "All Mid-Level Features",
+        "1-on-1 Coaching",
+        "Free Retake",
+        "Trial Exam",
+      ],
+      best: true,
+    },
+  ],
+  Senior: [
+    {
+      title: "Exam Only",
+      price: "$129",
+      features: [
+        "Preparation Guide Access",
+        "Community Access",
+        "Senior Exam Voucher",
+      ],
+      best: false,
+    },
+    {
+      title: "Pro Bundle",
+      price: "$179",
+      features: [
+        "Exam Voucher",
+        "Preparation Guide Access",
+        "Community Access",
+        "Training Access",
+      ],
+      best: false,
+    },
+    {
+      title: "Elite Master Bundle",
+      price: "$219",
+      features: [
+        "All Senior Features",
+        "Exclusive Coaching",
+        "Free Retake",
+        "Trial Exam",
+      ],
+      best: true,
+    },
+  ],
+};
+
+export const paymentIMG = [
+  { img: visa },
+  { img: mastercard },
+  { img: stripe },
+  { img: applepay },
+  { img: googlepay },
+  { img: paypal },
+];
+
+export const examniationBoard = [
   {
-    rank: ["Junior", "Mid-Level", "Senior"],
+    img: aurora,
+    name: "Aurora Scharff",
+    job: "React Expert & Microsoft MVP in Web Technologies",
+    icons: [FaGithub, FaXTwitter],
   },
-  // Junior
   {
-    Jlevel: ["Junior"],
-    Jicon: [MdEditDocument, HiMiniTrophy],
-    title: "Exam Only",
-    detail: "Interested in bulk vouchers?Contact us below",
-    price: "$345",
-    checkICon: FaCheckCircle,
+    img: alain,
+    name: "Alain Chautard",
+    job: "Google Developer Expert & Microsoft MVP in Web Technologies",
+    icons: [FaGithub, FaXTwitter],
+  },
+  {
+    img: alex,
+    name: "Alex Kyriakidis",
+    job: "Founder & CEO of certificates.dev and Vue School",
+    icons: [FaGithub, FaXTwitter],
+  },
+  {
+    img: devlin,
+    name: "Devlin Duldulao",
+    job: "React Expert & Microsoft MVP in Web Technologies",
+    icons: [FaGithub, FaXTwitter],
+  },
+];
+
+export const certificatesDiv = [
+  {
+    img: react1,
+    title: "React Frameworks and Server-Side Features: Beyond Client-Side",
+    detail:
+      "Learn React's server-side features: SSR with streaming, static pre-rendering, hydration, Server Components, and Server Functions. Discover how",
+    img1: aurora,
+    name: "Aurora Scharff",
+    time: "Oct 1, 2025",
+  },
+  {
+    img: react1,
+    title: "React <ViewTransition>: Smooth Animations Made Simple",
+    detail:
+      "Discover React’s new ViewTransition component and how it leverages concurrent features to create smooth, browser-native animations. Learn",
+    img1: aurora,
+    name: "Aurora Scharff",
+    time: "Oct 1, 2025",
+  },
+  {
+    img: react1,
+    title: "React Concurrent Features: An Overview",
+    detail:
+      "Learn React's key concurrent features—useTransition, useDeferredValue, Suspense, and useOptimistic—and how they coordinate to create smooth,",
+    img1: aurora,
+    name: "Aurora Scharff",
+    time: "Oct 1, 2025",
+  },
+];
+
+export const testimonials = [
+  {
+    icon: VscQuote,
+    detail:
+      "The training and preparation to take the React exam as well as the coding challenges are well-crafted for each level of users. Kudos to the whole team who built the end-to-end learning, training and examination. The long thoughtful process of everything paid off. I highly recommend the certification to everyone who needs a proof of their ability.",
+    img: aurora,
+    name: "Aurora Scharff",
+    job: "React Expert & Microsoft MVP in Web Technologies",
+  },
+  {
+    icon: VscQuote,
+    detail:
+      "Participating in this certification program has significantly deepened my understanding of React. While I had prior experience with the framework, the program clarified some advanced concepts like hooks, context API, and performance optimization techniques. One of the most valuable aspects of the exam experience was the way it tested practical, real-world React knowledge rather than just theoretical understanding. The questions were scenario-based, which pushed me to think critically and apply concepts like component lifecycle, state management, and hooks in context. I also appreciated the balance between multiple-choice questions and code-based problem solving, as it provided a more complete assessment of my skills. Overall, the exam felt like a true reflection of what a React developer needs to know to build production-ready applications. It’s made me a more confident and efficient React developer.",
+    img: aurora,
+    name: "Aurora Scharff",
+    job: "React Expert & Microsoft MVP in Web Technologies",
+  },
+];
+
+export const accordionData = [
+  {
+    title: "General",
+    icon: FaInfoCircle,
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    title: "Payment",
+    icon: FaInfoCircle,
+    content:
+      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  },
+  {
+    title: "Self-Study Training",
+    icon: FaInfoCircle,
+    content:
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  },
+  {
+    title: "Bootcamp",
+    icon: FaInfoCircle,
+    content:
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  },
+  {
+    title: "Examination",
+    icon: FaInfoCircle,
+    content:
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  },
+  {
+    title: "Prerequisites / Who is this for?",
+    icon: FaInfoCircle,
+    content:
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  },
+];
+
+export const certificatesData = [
+  {
+    img: certificates,
+    title: "What other Certifications do you want?",
+    detail:
+      "Let us know for which frameworks and technologies you’d like to receive validation for your skills by voting in the poll.",
+    img1: certification23,
+  },
+];
+
+export const footer = [
+  {
+    logo: logo,
+    title: "Certification of competence for React",
+    ReachSocial: "Reach out on Social Media",
+    icons: [FaXTwitter, FaLinkedinIn, FaFacebookF, FaYoutube, PiButterflyFill],
     list: [
-      "Preparation Guide Access",
-      "Discord Community Access",
-      "Junior Exam Voucher",
+      "Steps to Certification",
+      "Certificates",
+      "Pricing",
+      "Cast your Vote",
     ],
-  },
-  // Junior
-  {
-    Jlevel: ["Junior"],
-    Jicon: HiMiniTrophy,
-    title: "Exam Only",
-    detail: "Interested in bulk vouchers?Contact us below",
-    price: "$99",
-    checkICon: FaCheckCircle,
-    list: [
-      "Preparation Guide Access",
-      "Discord Community Access",
-      "Junior Exam Voucher",
-      "Self-Study Training Access",
-      "Free Tatake",
-      "Trial Exam",
-    ],
-  },
-  // Mid-Level
-  {
-    Mlevel: "Mid-Level",
-    Jicon: MdEditDocument,
-    Mtitle: "Exam Only",
-    Mdetail: "Interested in bulk vouchers?Contact us below",
-    Mprice: "$800",
-    checkICon: FaCheckCircle,
-    list: [
-      "Preparation Guide Access",
-      "Discord Community Access",
-      "Mid-Level Exam Voucher",
+
+    lists1: [
+      "Contact Us",
+      "Terms & Conditions",
+      "Privacy Policy",
+      "Help Center",
+      "Blog",
     ],
   },
 ];
