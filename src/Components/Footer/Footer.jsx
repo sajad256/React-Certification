@@ -84,7 +84,13 @@ export default function Footer() {
             </h1>
           </div>
           <div className="pt-3 md:pt-0 text-sm">
-            <h1>BitterBrains Inc • Certificates.dev</h1>
+            <a href="https://www.linkedin.com/feed/" target="_blank">
+              {" "}
+              <h1>
+                Develop By •{" "}
+                <span className="font-bold text-gray-800">Sajad Danish</span>
+              </h1>
+            </a>
           </div>
         </div>
       </div>
